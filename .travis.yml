@@ -6,4 +6,4 @@ before_install:
   - docker build -t mbondarc/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run mbondarc/docker-react npm run test -- --coverage
+  - docker run CI=true mbondarc/docker-react npm run test -- --coverage
